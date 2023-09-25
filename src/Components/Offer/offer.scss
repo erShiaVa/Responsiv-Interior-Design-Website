@@ -1,0 +1,35 @@
+.offer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    @media (max-width: 1024px){
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.offer__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 400px;
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+
+    @media (max-width: 944px){
+        max-width: 607px;
+    }
+}
+
+.offer_text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}

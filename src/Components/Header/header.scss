@@ -1,0 +1,75 @@
+@use "../../Styles/base.scss";
+
+.header{
+    position: relative;
+    background-image: url(../../assets/header-img-one.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+    @media (max-width: 1280px){
+        height: 78vh;
+    }
+
+    @media (max-width: 1024px){
+        height: 66vh;
+    }
+
+    @media (max-width: 834px){
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 744px){
+        height: 50vh;
+    }
+
+    @media (max-width: 480px){
+        background-image: url(../../assets/header-img-one-mobil.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.header__block{
+    width: 30rem;
+    height: auto;
+    background-color: #113e21c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 4.75rem;
+    box-shadow: 2px 0px 4px rgba(0,0,0,0.25);
+
+    @media (max-width: 1280px){
+        width: 24rem;
+    }
+
+    @media (max-width: 1024px){
+        width: 22rem;
+    }
+
+    @media (max-width: 834px){
+        display: none;
+    }
+}
+
+.header__block-mobil{
+    display: none;
+
+    @media (max-width: 834px){
+        background-color: #113e21c4;
+        height: 14rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2.85rem;
+    }
+}
