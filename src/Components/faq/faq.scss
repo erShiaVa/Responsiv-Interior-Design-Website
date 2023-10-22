@@ -1,0 +1,57 @@
+@use '../../Styles/base';
+@use '../../Styles/variables';
+.faq{
+    max-width: 78rem;
+    padding: 1.5rem;
+    margin: 8rem auto;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3.15rem;
+    @media (max-width: variables.$breakpoint-sm) {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq__heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.faq__container{
+    width: 42rem;
+    @media (max-width: variables.$breakpoint-sm) {
+        width: 32rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        width: 25rem;
+    }
+    .faq-item{
+        margin-bottom: 3rem;
+        border-bottom: 1px solid variables.$primaryColor;
+        cursor: pointer;
+        color: variables.$fontDark;
+        .faq-question {
+            padding: 1rem;
+            font-family: variables.$titleFont;
+            font-weight: 550;
+            text-transform: uppercase;
+            letter-spacing: 0.04;
+            line-height: 188%;
+        }
+    }
+    .faq-answer {
+        padding: 1rem;
+        font-family: variables.$titleFont;
+        font-size: 0.85rem; 
+        letter-spacing: 0.045rem;
+        line-height: 188%;
+        color: variables.$fontDark;
+        @media (max-width: variables.$breakpoint-sm){
+            font-size: 0.75rem;
+        }
+      }
+    }

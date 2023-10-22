@@ -1,0 +1,13 @@
+@use '../../Styles/base';
+@use '../../Styles/variables';
+
+.marquee{
+    max-width: 100%;
+    background-color: variables.$bg;
+    border-bottom: 2px solid variables.$secondaryColor;
+    height: 2.95rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}    

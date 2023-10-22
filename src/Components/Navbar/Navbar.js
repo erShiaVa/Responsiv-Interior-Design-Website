@@ -3,7 +3,6 @@ import { assets } from '../../assets';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import './navbar.scss';
-import '../../Styles/base.scss';
 
 function Navbar() {
   const [isOpen, setisOpen] = useState(false);
@@ -17,6 +16,7 @@ function Navbar() {
         <div className="navbar">
           <div className="logo">
               <img src={assets.logo} alt="#" />
+              <p className="logo_text"><span>l</span>ux.</p>
           </div>
           {isOpen ? (
             <div className="menu__button--close" onClick={toggleSidebar}>

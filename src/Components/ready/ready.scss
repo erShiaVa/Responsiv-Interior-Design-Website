@@ -1,0 +1,22 @@
+@use '../../Styles/base';
+@use '../../Styles/variables';
+
+.ready{
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid variables.$secondaryColor;
+    // border-top: 2px solid variables.$secondaryColor;
+    padding: 1.5rem;
+    background-color: variables.$bgDark;
+    .ready__content{
+        max-width: 43rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3.15rem;
+    }
+}

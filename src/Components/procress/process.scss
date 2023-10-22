@@ -1,0 +1,49 @@
+@use '../../Styles/base';
+@use '../../Styles/variables';
+
+.process{
+    max-width: 78rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+    @media (max-width: variables.$breakpoint-sm) {
+        flex-flow: column-reverse;
+    }
+    .process__img img{
+        width: 100%;
+        height: auto;
+        border-radius: variables.$imageBorder;
+    }
+    .process__content{
+        .heading__three{
+            padding-bottom: 3.25rem;
+            @media (max-width: variables.$breakpoint-md) {
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+    .process__checks{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .process__check{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.85rem;
+        img{
+            width: 32px;
+        }
+        .process__check-text{
+            padding-bottom: 2.95rem;
+            @media (max-width: variables.$breakpoint-md) {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
