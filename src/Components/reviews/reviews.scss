@@ -1,0 +1,73 @@
+@use '../../Styles/base';
+@use '../../Styles/variables';
+
+.reviews{
+    max-width: 78rem;
+    padding: 1.5rem;
+    margin: 8rem auto;
+}
+.review__heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2.15rem;
+}
+.slick-slide > div {
+  margin: 0 5px;
+}
+.slick-list {
+  margin: 0 -5px;
+}
+.review__card{
+    border-radius: variables.$imageBorder;
+    border: 2px solid variables.$bg;
+    background-color: variables.$bgDark;
+    overflow: hidden;
+    height: 32rem;
+    padding: 1.65rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    flex-direction: column !important;
+}
+.card-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.15rem;
+    img{
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        // filter: sepia(0.1) brightness(1.1) contrast(0.9) saturate(1.5);
+        filter: sepia(0.2) saturate(1.4) contrast(0.9);
+    }
+    .review__text{
+        font-family: variables.$titleFont;
+        font-size: 0.85rem; 
+        letter-spacing: 0.045rem;
+        line-height: 168%;
+        font-style: italic;
+        color: variables.$fontDark;
+        text-align: center;
+    }
+}
+.card-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    .review__customer{
+        font-family: variables.$titleFont;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.07rem;
+        font-weight: 600;
+        color: variables.$fontDark;
+    }
+}

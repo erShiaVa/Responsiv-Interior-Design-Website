@@ -1,28 +1,86 @@
-.management{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.25rem;
+@use '../../Styles/base';
+@use '../../Styles/variables';
 
-    @media (max-width: 944px){
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2.85rem;
-    } 
-}
-
-.management__card{
-    width: 350px;
+.management__heading{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-
-    @media (max-width: 944px){
-        width: 620px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+.management__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.5rem;
+    max-width: 78rem;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    position: relative;
+    @media (max-width: variables.$breakpoint-xxs) {
+        flex-flow: column;;
+    } 
+    &::before,
+    &::after {
+        content: "";
+        background: variables.$primaryColor;
+        position: absolute;
     }
-
-    @media (max-width: 834px){
-        align-items: center;
+    &::before {
+        display: none;
+    } 
+    &::after {
+        height: 1px;
+        left: 0;
+        right: 0;
+        bottom: 182px;
+        margin: auto;
+        @media (max-width: variables.$breakpoint-lg) {
+            bottom: 186px;
+        }
+        @media (max-width: variables.$breakpoint-md) {
+            bottom: 210px;
+        }
+        @media (max-width: variables.$breakpoint-sm) {
+            bottom: 199px;
+        }
+        @media (max-width: variables.$breakpoint-xs) {
+            bottom: 254px;
+            gap: 4.5rem;
+        }   
+        @media (max-width: variables.$breakpoint-xxs) {
+            bottom: 366px;
+        }      
+    }
+    .management__box{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 6.5rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 1px;
+            background: variables.$primaryColor;
+            position: absolute; 
+            top: 0;
+            bottom: 0;
+            right: -57px;
+            margin: auto;
+            @media (max-width: variables.$breakpoint-xxs) {
+                display: none;
+            } 
+        }
+        &:last-child::before {
+            display: none;
+        }
+    .left{
+        text-align: right;
+    }
+    @media (max-width: variables.$breakpoint-xs) {
+            gap: 4.5rem;
+        }
     }
 }

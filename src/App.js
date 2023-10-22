@@ -1,26 +1,33 @@
 import './App.css';
-import About from './Components/About/About';
-import Checks from './Components/Checks/Checks';
-import Design from './Components/Design/Design';
 import Header from './Components/Header/Header';
-import Management from './Components/Management/Management';
 import Navbar from './Components/Navbar/Navbar';
-import Offer from './Components/Offer/Offer';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Slider from './Components/Slider/Slider';
+import Bathroom from './Components/bathroom/Bathroom';
+import Faq from './Components/faq/Faq';
+import Footer from './Components/footer/Footer';
+import Gallery from './Components/gallery/Gallery';
+import Kitchen from './Components/kitchen/Kitchen';
+import Management from './Components/management/Management';
+import Process from './Components/procress/Process';
+import Ready from './Components/ready/Ready';
+import Reviews from './Components/reviews/Reviews';
+import TextScroll from './Components/textScroll/TextScroll';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Header/>
-      <About/>
-      <Offer/>
-      <Portfolio/>
-      <Design/>
+      <TextScroll/>
+      <Ready/>
+      <Kitchen/>
+      <Bathroom/>
       <Management/>
-      <Slider/>
-      <Checks/>
+      <Gallery/>
+      <Process/>
+      <Reviews/>
+      <Faq/>
+      <Footer/>
     </div>
   );
 }

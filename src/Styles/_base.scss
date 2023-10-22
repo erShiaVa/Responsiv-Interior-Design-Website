@@ -1,0 +1,181 @@
+@use './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: variables.$bg;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    font-family: variables.$titleFont;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+.container{
+    max-width: 78rem;
+    margin: 2rem auto; 
+    padding: 1.85rem;
+
+    @media (max-width: variables.$breakpoint-lg){
+        padding: 2rem;
+    }
+}
+.icon{
+    cursor: pointer;
+}
+.title{
+    font-family: variables.$titleFont;
+    font-size: 9.3rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    text-shadow: variables.$textShadow;
+    color: variables.$fontDark;
+    text-transform: uppercase;
+}
+.heading__one{
+    font-family: variables.$titleFont;
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: 0.107rem;
+    color: variables.$fontDark;
+    text-shadow: variables.$textShadow;
+    text-transform: uppercase;
+    line-height: 3.85rem;
+    &--light{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.75rem;
+        font-weight: 700;
+        letter-spacing: 0.107rem;
+        color: variables.$bg;
+        text-shadow: variables.$textShadow;
+        text-transform: uppercase;
+        line-height: 3.85rem;
+    }
+    @media (max-width: variables.$breakpoint-md) {
+        font-size: 2.65rem;
+        line-height: 3.25rem;
+    }
+    @media (max-width: variables.$breakpoint-xxs) {
+        font-size: 2.45rem;
+    }
+}
+
+.heading__two{
+    font-family: variables.$titleFont;
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: variables.$fontDark;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    line-height: 2.45rem;
+    &--italic{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.85rem;
+        font-weight: 300;
+        color: variables.$fontDark;
+        text-transform: capitalize;
+        letter-spacing: 0.06rem;
+        line-height: 2.75rem;
+        font-style: italic;
+        @media (max-width: variables.$breakpoint-xxs) {
+            font-size: 1.65rem;
+        }
+    }
+}
+
+.heading__three{
+    font-family:  variables.$titleFont;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.039rem;
+    line-height: 153%;
+    color: variables.$fontDark;
+    text-transform: uppercase;
+    &--ital{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.039rem;
+        color: variables.$fontDark;
+        text-transform: uppercase;
+    }
+}
+
+.paragraph{
+    font-family: variables.$titleFont;
+    font-size: 0.85rem; 
+    letter-spacing: 0.045rem;
+    line-height: 188%;
+    color: variables.$fontDark;
+    @media (max-width: variables.$breakpoint-sm){
+        font-size: 0.75rem;
+    }
+}
+
+.description{
+    font-family: variables.$titleFont;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04;
+    font-weight: 600;
+    color: variables.$fontLight;
+    padding-bottom: 0.85rem;
+    &--light{
+        color: variables.$bg;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04;
+        font-weight: 600;
+        padding-bottom: 0.85rem;
+    }
+    @media (variables.$breakpoint-sm){
+        font-size: 0.75rem;
+    }
+}
+.big-paragraph{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025rem;
+    font-weight: 600;
+    color: variables.$fontDark;
+    padding-bottom: 0.85rem;
+}
+.button-primary{
+    border-radius: variables.$buttonBorder;
+    border: none;
+    background-color: variables.$primaryColor;
+    padding: 0.8rem 2.5rem;
+    color: variables.$bg;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    box-shadow: variables.$buttonShadow;
+    @media (max-width: variables.$breakpoint-sm){
+        font-size: 0.75rem;
+    }
+}
+
+.button-secondary{
+    border-radius: variables.$buttonBorder;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid variables.$primaryColor;
+    color: variables.$fontDark;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 0.85rem;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: variables.$buttonShadow;
+    @media (max-width: variables.$breakpoint-sm){
+        font-size: 0.75rem;
+    }
+}
