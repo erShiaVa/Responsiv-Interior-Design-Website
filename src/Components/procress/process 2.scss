@@ -38,12 +38,6 @@
         gap: 0.85rem;
         img{
             width: 32px;
-            @media (max-width: variables.$breakpoint-xxs) {
-                width: 26px;
-            }
-            @media (max-width: variables.$breakpoint-xss) {
-                width: 22px;
-            }
         }
         .process__check-text{
             padding-bottom: 2.95rem;

@@ -9,6 +9,12 @@
     text-align: center;
     padding-top: 8rem;
     padding-bottom: 2rem;
+    @media (max-width: variables.$breakpoint-xxs) {
+        padding-top: 6rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        padding-top: 4rem;
+    }
 }
 .management__container{
     display: flex;
@@ -19,8 +25,8 @@
     margin: 2rem auto;
     padding: 0 1.5rem;
     position: relative;
-    @media (max-width: variables.$breakpoint-xxs) {
-        flex-flow: column;;
+    @media (max-width: variables.$breakpoint-sm) {
+        flex-flow: column;
     } 
     &::before,
     &::after {
@@ -44,15 +50,8 @@
             bottom: 210px;
         }
         @media (max-width: variables.$breakpoint-sm) {
-            bottom: 199px;
+            display: none;
         }
-        @media (max-width: variables.$breakpoint-xs) {
-            bottom: 254px;
-            gap: 4.5rem;
-        }   
-        @media (max-width: variables.$breakpoint-xxs) {
-            bottom: 366px;
-        }      
     }
     .management__box{
         flex: 1;
@@ -78,6 +77,9 @@
         }
     .left{
         text-align: right;
+        @media (max-width: variables.$breakpoint-sm) {
+            text-align: left;
+        }
     }
     @media (max-width: variables.$breakpoint-xs) {
             gap: 4.5rem;

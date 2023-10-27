@@ -10,9 +10,6 @@
     // border-top: 2px solid variables.$secondaryColor;
     padding: 1.5rem;
     background-color: variables.$bgDark;
-    @media (max-width: variables.$breakpoint-xxs) {
-        height: 20rem;
-    }
     .ready__content{
         max-width: 43rem;
         margin: 0 auto;

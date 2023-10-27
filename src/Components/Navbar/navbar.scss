@@ -5,7 +5,7 @@
     max-width: 98rem;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: relative;
     z-index: 2;
     @media (max-width: 1290px){
@@ -37,10 +37,16 @@
             font-weight: 700;
             font-size: 2.25rem;
             color: variables.$primaryColor;
+            @media (max-width: variables.$breakpoint-xxs) {
+                font-size: 2rem;
+            }
         }
     }
     img{
         box-shadow: none;
+        @media (max-width: variables.$breakpoint-xxs) {
+            width: 28px;
+        }
     }
 }
 .menu__button{
@@ -73,6 +79,10 @@
     @media (max-width: variables.$breakpoint-xs) {
         width: 16rem;
         right: -16rem;
+    }
+    @media (max-width: variables.$breakpoint-xss) {
+        width: 14rem;
+        right: -14rem;
     }
     li{
         font-family: variables.$titleFont;

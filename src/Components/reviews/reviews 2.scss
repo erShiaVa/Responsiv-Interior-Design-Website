@@ -5,12 +5,6 @@
     max-width: 78rem;
     padding: 1.5rem;
     margin: 8rem auto;
-    @media (max-width: variables.$breakpoint-xxs){
-        margin: 6rem auto;
-    }
-    @media (max-width: variables.$breakpoint-xss){
-        margin: 4rem auto;
-    }
 }
 .review__heading{
     display: flex;
@@ -38,12 +32,6 @@
     align-items: center !important;
     gap: 2rem !important;
     flex-direction: column !important;
-    @media (max-width: variables.$breakpoint-xxs){
-        height: 28rem;
-    }
-    @media (max-width: variables.$breakpoint-xss){
-        height: 25rem;
-    }
 }
 .card-top{
     display: flex;
@@ -56,15 +44,8 @@
         height: 12.5rem;
         border-radius: 50%;
         object-fit: cover;
+        // filter: sepia(0.1) brightness(1.1) contrast(0.9) saturate(1.5);
         filter: sepia(0.2) saturate(1.4) contrast(0.9);
-        @media (max-width: variables.$breakpoint-xxs){
-            width: 11rem;
-            height: 11rem;
-        }
-        @media (max-width: variables.$breakpoint-xss){
-            width: 9rem;
-            height: 9rem;
-        }
     }
     .review__text{
         font-family: variables.$titleFont;
@@ -74,9 +55,6 @@
         font-style: italic;
         color: variables.$fontDark;
         text-align: center;
-        @media (max-width: variables.$breakpoint-xxs){
-            font-size: 0.65rem;
-        }
     }
 }
 .card-bottom{
@@ -91,8 +69,5 @@
         letter-spacing: 0.07rem;
         font-weight: 600;
         color: variables.$fontDark;
-        @media (max-width: variables.$breakpoint-xxs){
-            font-size: 0.55rem;
-        }
     }
 }

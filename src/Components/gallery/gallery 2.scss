@@ -5,12 +5,6 @@
     max-width: 78rem;
     padding: 1.5rem;
     margin: 8rem auto;
-    @media (max-width: variables.$breakpoint-xxs) {
-        margin: 6rem auto;
-    }
-    @media (max-width: variables.$breakpoint-xss) {
-        margin: 4rem auto;
-    }
 }
 .gallery__container{
     display: grid;

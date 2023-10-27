@@ -1,29 +1,29 @@
 @use '../../Styles/base';
 @use '../../Styles/variables';
 
-.kitchen{ 
+.bathroom{
     width: 100%;
     height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: none;
     border-bottom: 2px solid variables.$secondaryColor;
     position: relative;
+    background-color: variables.$bgDark;
     transition: filter 0.5s ease-in-out,
                 position 0.5s ease-in-out,
-                background-repeat 0.5s ease-in-out,
-                background-size 0.5s ease-in-out,
-                background-image 0.5s ease-in-out;
+                background-repeat 0.2s ease-in-out,
+                background-size 0.2s ease-in-out,
+                background-image 0.2s ease-in-out;
     &:hover{
-        background-image: url(../../assets/kitchen.jpg);
+        background-image: url(../../assets/bathroom.jpg);
         filter: contrast(0.8) brightness(0.9) saturate(0.8) sepia(0.15);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative; 
-    }  
-    .kitchen__heading{
+    }
+    .bathroom__heading{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,11 +31,5 @@
         gap: 3.25rem;
         position: relative;
         z-index: 2;
-    } 
-    @media (max-width: variables.$breakpoint-xxs) {
-        height: 20rem;
     }
-    @media (max-width: variables.$breakpoint-xss) {
-        height: 16rem;
-    }
-}  
+}

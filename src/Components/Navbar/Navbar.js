@@ -20,11 +20,11 @@ function Navbar() {
           </div>
           {isOpen ? (
             <div className="menu__button--close" onClick={toggleSidebar}>
-              <AiOutlineClose size={25} />
+              <AiOutlineClose size={22}/>
             </div>
           ) : (
             <div className="menu__button" onClick={toggleSidebar}>
-              <BiMenuAltRight size={27} /> 
+              <BiMenuAltRight size={22} />
             </div>
           )}
         </div>

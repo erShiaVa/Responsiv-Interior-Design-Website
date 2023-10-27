@@ -32,10 +32,4 @@
         position: relative;
         z-index: 2;
     } 
-    @media (max-width: variables.$breakpoint-xxs) {
-        height: 20rem;
-    }
-    @media (max-width: variables.$breakpoint-xss) {
-        height: 16rem;
-    }
 }  
